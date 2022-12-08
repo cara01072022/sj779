@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657684102-l45yKd6P" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่ว่างไหมคะ!!",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "size": "full",
+                "aspectRatio": "10.40:10.40",
+                "url": "https://cdn.discordapp.com/attachments/1045646907638284338/1049634367833645056/free50.png"
+              }
+            ],
+            "cornerRadius": "xl",
+            "borderColor": "#ccffff",
+            "borderWidth": "none"
+          }
+        ],
+        "paddingAll": "sm",
+        "cornerRadius": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "10.40:5.2",
+            "url": "https://cdn.discordapp.com/attachments/1045646907638284338/1049636308546486282/0fe14936d045e800.png"
+          }
+        ],
+        "paddingAll": "sm",
+        "cornerRadius": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "size": "full",
+                "aspectRatio": "4.8:1.3",
+                "url": "https://cdn.discordapp.com/attachments/1045646907638284338/1049636326246469642/cf07b7e8b341ba9b.png"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/5UDjU4e"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "size": "full",
+                "aspectRatio": "4.8:1.3",
+                "url": "https://cdn.discordapp.com/attachments/1045646907638284338/1049636338590294026/3a1e1d617570c1ca.png"
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://www.superjoker99.com/"
+            }
+          }
+        ],
+        "paddingAll": "md",
+        "spacing": "sm"
+      }
+    ],
+    "backgroundColor": "#330000"
+  }
+}
+
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
